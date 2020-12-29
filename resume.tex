@@ -14,8 +14,10 @@
 
 \name{\en{Songjian Li}\zh{李松健}}
 \basicInfo{
-      \email{lisongjianshuai@gmail.com} \textperiodcentered\
-      \github[abcdlsj]{https://github.com/abcdlsj}
+\email{lisongjianshuai@gmail.com} \textperiodcentered\
+\phone{13225639902} \textperiodcentered\
+\homepage[Blog]{https://abcdlsj.github.io/} \textperiodcentered\
+\github[GitHub]{https://github.com/abcdlsj}
 }
 
 \section{\en{Education}\zh{教育经历}}
@@ -29,74 +31,110 @@
 \section{\en{Work Experience}\zh{工作经历}}
 \en{\datedsubsection{\textbf{\href{https://www.didiglobal.com/}{DiDi Inc.}}, Beijing, China}{11/2020 -- Present}}
 \zh{\datedsubsection{\textbf{\href{https://www.didiglobal.com/}{北京嘀嘀无限科技发展有限公司（DiDi Inc.）}}}{2020/11 -- 至今}}
-\en{\role{OLAP Database Group}{R\&D Intern}}
-\zh{\role{业务平台技术部}{研发实习}}
+\en{\role{Business platform technology department}{R\&D Intern}}
+\zh{\role{业务平台技术部}{研发实习生}}
 \begin{itemize}
+      \item \en{The main work is the maintenance and optimization of the internal quality testing platform  (Go), as well as being responsible for the development of the internal testing platform and its version change (Python)}
+            \zh{主要工作是负责网约车内部质量检测平台的维护（Go），以及内部测试平台的开发及其版本优化（Python）}
       \item \en{}
-            \zh{负责网约车内部对接 RD 和 QA 的质量检测平台的开发和优化（Go），以及内部测试平台开发（Python）}
+            \zh{工作期间推进新版本测试框架在多条业务线的使用率，学习到关于 CI/CD 的知识以及上线、部署等开发流程平台的使用}
 \end{itemize}
 
 \section{\en{Portfolios}\zh{个人项目}}
-\datedsubsection{\textbf{gocache}}{\url{https://github.com/abcdlsj/gocache}}
-\en{Operating System implemented in Rust}
-\zh{使用 Go 编写的分布式缓存}
+
+
+\datedsubsection{\textbf{Aurora}}{\url{https://github.com/abcdlsj/aurora}}
+\en{}
+\zh{WebServer (Epoll + Reactor)}
 \begin{itemize}
       \item \en{}
-            \zh{实现单机缓存和基于 HTTP 的分布式缓存，最近最少访问(Least Recently Used, LRU) 缓存策略，使用一致性哈希选择节点（负载均衡），利用 SingleFlight 机制防止缓存击穿}
+            \zh{实现 Epoll + Reactor 的高性能 WebServer}
 \end{itemize}
 
-\datedsubsection{\textbf{CJson}}{\url{https://github.com/abcdlsj/cjson}}
-\en{Scientific Computing Environment Running in Browsers}
+% \datedsubsection{\textbf{goRaft}}{\url{https://github.com/abcdlsj/goraft}}
+% \en{}
+% \zh{使用 Go 实现分布式共识算法 Raft}
+% \begin{itemize}
+%       \item \en{}
+%             \zh{}
+% \end{itemize}
+
+\datedsubsection{\textbf{goRPC}}{\url{https://github.com/abcdlsj/gorpc}}
+\en{}
+\zh{使用 Go 实现的 RPC 框架}
+\begin{itemize}
+      \item \en{}
+            \zh{学习 gRPC 开发风格，实现简单注册中心，支持负载均衡}
+\end{itemize}
+
+\datedsubsection{\textbf{goCache}}{\url{https://github.com/abcdlsj/gocache}}
+\en{}
+\zh{使用 Go 编写的分布式缓存}
+\begin{itemize}
+      \item \en{Implement single-computer caching and HTTP-based distributed caching, Least Recently Used (LRU) caching policy, use consistent hash to select nodes (load balancing), and use the SingleFlight mechanism to prevent cache blowout}
+            \zh{实现单机缓存和基于 HTTP 的分布式缓存，最近最少访问(Least Recently Used, LRU) 缓存策略，使用一致性哈希选择节点（负载均衡），利用 SingleFlight 机制防止缓存击穿}
+      \item \en{Advantages over MemCached: connects to its own Peer after Key slicing, no need to set up a server, and reduces the number of requests by implementing the SingleFlight mechanism}
+            \zh{较 MemCached 优点：通过 Key 分片之后连接自身 Peer，不需要设置服务端，通过实现 SingleFlight 机制，减少请求次数}
+\end{itemize}
+
+\datedsubsection{\textbf{cJson}}{\url{https://github.com/abcdlsj/cjson}}
+\en{}
 \zh{使用 C 语言实现的 Json 解析库}
 \begin{itemize}
-      \item \en{Supports most common matrix operations, accelerated by GPU using WebGL.}
+      \item \en{}
             \zh{实现符合标准的 JSON 解析器和生成器，支持 Unicode}
-      \item \en{Built-in TeX support, data visualization and symbolic computation.}
-            \zh{学习了 TDD，Valgrind...}
+      \item \en{}
+            \zh{学习了 TDD 开发，Valgrind 等工具的使用}
 \end{itemize}
 
 \section{\en{Skills}\zh{技能}}
 \begin{itemize}[parsep=0.25ex]
       \item \en{\textbf{Programming Languages}:
-                  }
+            }
             \zh{\textbf{编程语言}:
                   熟悉 C++/Go，包括 C++ 智能指针，C11/C14 特性，了解 Python/Rust}
 
+      \item \en{\textbf{Algorithm}:
+                  Familiar with common data structures and algorithms}
+            \zh{\textbf{数据结构与算法}:
+                  熟悉常用数据结构与算法}
+
       \item \en{\textbf{System}:
-                  }
+            }
             \zh{\textbf{系统}:
                   进程相关包括通信、同步、调度、死锁，以及虚拟内存，熟悉 Socket 编程，进程间通讯编程，
                   Linux 下 I/O 模型，多路复用机制。}
 
       \item \en{\textbf{Network}:
-                  }
+            }
             \zh{\textbf{网络}：
-                  熟悉 OSI 模型，了解常见网络协议（TCP，UDP），HTTP 2.0}
+                  熟悉 OSI 模型，了解常见网络协议（TCP，UDP），了解 HTTP 2.0}
 
-      \item \en{\textbf{Algorithm}:
-                  }
-            \zh{\textbf{数据结构与算法}:
-                  熟悉常用数据结构与算法，实现过 SkipList、B/B+tree 等数据结构
-                  }
+      \item \en{\textbf{DataBase}: Familiarity with database usage, understanding of indexing and concurrency control}
+            \zh{\textbf{数据库}: 熟悉数据库使用，了解索引以及并发控制}
 
-      \item \en{\textbf{Distributed Systems}:
-                  }
-            \zh{\textbf{分布式系统}:
-                  熟悉 ZooKeeper 与 Raft 算法，正在参与 MIT6.824 课程。}
-            
+            % \item \en{\textbf{Distributed Systems}:
+            %       }
+            %       \zh{\textbf{分布式系统}:
+            %             有分布式系统开发经验，熟悉 Raft 算法，参加过 MIT6.824，PingCAP Talent Plan 等分布式课程。}
+
       \item \en{\textbf{Developing Tools}:
-                  }
+            }
             \zh{\textbf{开发工具}:
                   熟悉 Linux，有 Git 等团队合作工具的经验。}
 \end{itemize}
 
 \section{\en{Miscellaneous}\zh{其他}}
-\begin{itemize}
+\begin{itemize}[parsep=0.25ex]
       \item \en{}
-            \zh{兴趣：分布式系统、存储、缓存、数据库等。}
+            \zh{兴趣：分布式系统、云、存储、缓存、数据库等。}
       \item \en{}
             \zh{开源爱好者，喜欢折腾，日常使用 ArchLinux，Emacs（Emacs 维护有自己的配置）}
-        
+            % \item \en{}
+            %       \zh{参加过 MIT6.828(Labs$_{3/8}$)，MIT6.824(Labs$_{2/4}$)，CMU15-445(Labs$_{1/4}$) 等国外课程}
+      \item \en{}
+            \zh{热爱编程，喜欢记录以及分享技术，写博客}
+
 \end{itemize}
 
 \end{document}
