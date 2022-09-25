@@ -1,0 +1,148 @@
+\documentclass{resume}
+
+\newcommand{\en}[1]{#1}
+\newcommand{\zh}[1]{}
+
+\zh{\usepackage{xeCJK}}
+\zh{\setCJKmainfont{Noto Sans CJK SC}}
+\zh{\setCJKsansfont{Noto Sans CJK SC}}
+\zh{\setCJKmonofont{Noto Sans CJK SC}}
+
+\hypersetup{hidelinks}
+
+\begin{document}
+\linespread{1.5}
+
+\name{\en{Songjian Li}\zh{李松健}}
+\basicInfo{
+\email{lisongjianshuai@gmail.com} \textperiodcentered\
+\phone{13225639902} \textperiodcentered\
+\homepage[Blog]{https://abcdlsj.github.io/} \textperiodcentered\
+\github[GitHub]{https://github.com/abcdlsj}
+}
+
+\section{\faGraduationCap\ \en{Education}\zh{教育经历}}
+\en{\datedsubsection{\textbf{HeFei University of Technology}, Undergraduate}{09/2017 -- Present}}
+\zh{\datedsubsection{\textbf{合肥工业大学}, 在读本科}{2017/09 -- 至今}}
+\begin{itemize}
+      \item \en{Electronic Information Science and Technology, \textit{Computer College}}
+            \zh{电子信息科学与技术（计算机学院），2021 年毕业}
+\end{itemize}
+
+\section{\faUsers\ \en{Work Experience}\zh{工作经历}}
+\en{\datedsubsection{\textbf{\href{https://www.didiglobal.com/}{DiDi Inc.}}, Beijing, China}{11/2020 -- 01/2021}}
+\zh{\datedsubsection{\textbf{\href{https://www.didiglobal.com/}{北京嘀嘀无限科技发展有限公司（DiDi Inc.）}}}{2020/11 -- 2021/1}}
+\en{\role{Business platform technology department}{R\&D Intern}}
+\zh{\role{质量中台}{研发实习生}}
+\begin{itemize}[parsep=0.5ex]
+      \item \en{The main work is the maintenance and optimization of the internal quality testing platform  (Go), as well as being responsible for the development of the internal testing platform and its version change (Python)}
+            \zh{负责质量效能部门质量检测平台的维护（Go），以及内部测试平台的开发及其版本优化（Python）}
+      \item \en{}
+            \zh{工作期间推进新版本测试框架在多条业务线的使用率，学习到关于 CI/CD 的知识，了解到上线、部署等开发流程平台的使用}
+\end{itemize}
+
+\section{\faGithubAlt\ \en{Portfolios}\zh{个人项目}}
+
+% \datedsubsection{\textbf{Aurora}}{\url{https://github.com/abcdlsj/aurora}}
+% \en{}
+% \zh{WebServer (Epoll + Reactor)}
+% \begin{itemize}
+%       \item \en{}
+%             \zh{实现 Epoll + Reactor 的高性能 WebServer}
+% \end{itemize}
+
+\datedsubsection{\textbf{cLSM}}{\url{https://github.com/abcdlsj/clsm}}
+\en{}
+\zh{基于 SkipList 的 LSM-Tree 数据结构实现}
+\begin{itemize}[parsep=0.5ex]
+      \item \en{}
+            \zh{Memory 层采用 SkipList 作为底层，Disk 层使用有序键值对作为底层}
+      \item \en{}
+            \zh{利用堆优化 Merge 操作，利用 BloomFilter 降低读放大问题，删除采用墓碑机制标记 Key}
+      \item \en{}
+            \zh{cLSM 规避磁盘随机写入问题，相比 B+ Tree 牺牲读性能，大幅提高写性能}
+\end{itemize}
+
+% \datedsubsection{\textbf{goRaft}}{\url{https://github.com/abcdlsj/goraft}}
+% \en{}
+% \zh{Go 实现 Raft 算法}
+% \begin{itemize}
+%       \item \en{}
+%             \zh{使用 gPRC 实现 Raft 算法}
+% \end{itemize}
+
+% \datedsubsection{\textbf{goRPC}}{\url{https://github.com/abcdlsj/gorpc}}
+% \en{}
+% \zh{Go 实现的 RPC 框架}
+% \begin{itemize}
+%       \item \en{}
+%             \zh{学习 gRPC 开发风格，实现简单注册中心，支持负载均衡；Future：注册中心采用 zookeeper，负载均衡使用加权轮询}
+% \end{itemize}
+
+% \datedsubsection{\textbf{Pluto}}{\url{https://github.com/abcdlsj/Pluto}}
+% \en{}
+% \zh{基于 Raft 与 Percolator 模型的分布式键值数据库}
+% \begin{itemize}
+%       \item \en{}
+%             \zh{学习 MIT 6.824 和 PingCAP Talent Plan 后完成}
+%       \item \en{}
+%             \zh{使用 Go 语言开发，基于 Raft 分布式共识算法和 Google Percolator 事务模型实现}
+% \end{itemize}
+
+\datedsubsection{\textbf{goCache}}{\url{https://github.com/abcdlsj/goCache}}
+\en{}
+\zh{Go 编写的分布式缓存}
+\begin{itemize}[parsep=0.5ex]
+      \item \en{}
+            \zh{Cache 单元采用 LRU 缓存策略，上层封装实现单机缓存和基于 HTTP 的分布式缓存}
+      \item \en{}
+            \zh{使用一致性哈希选择节点（负载均衡），利用 SingleFlight 机制防止缓存击穿}
+      \item \en{}
+            \zh{对比 MemCached，goCache 无需设置服务端，利用 SingleFlight 机制减少请求次数}
+\end{itemize}
+
+\datedsubsection{\textbf{cJson}}{\url{https://github.com/abcdlsj/cJson}}
+\en{}
+\zh{C 语言 Json 解析库}
+\begin{itemize}
+      \item \en{}
+            \zh{实现符合标准的 JSON 解析器和生成器，支持 Unicode，学习了 TDD 开发、Valgrind 内存泄漏工具的使用}
+\end{itemize}
+
+\section{\faCogs\ \en{Skills}\zh{技能}}
+
+\begin{itemize}[parsep=0.5ex]
+      \item \en{\textbf{Programming Languages}: }
+            \zh{\textbf{编程语言}: 熟悉 C++/Go 基础，了解部分 C11/C14 特性，了解 Python}
+
+      \item \en{\textbf{Algorithm}: Familiar with common data structures and algorithms}
+            \zh{\textbf{数据结构与算法}: 熟悉常用数据结构与算法}
+
+      \item \en{\textbf{System}: }
+            \zh{\textbf{系统}: 进程相关包括通信、同步、调度；了解死锁以及虚拟内存等；熟悉 Socket 编程，进程间通讯编程；熟悉 Linux I/O 模型，了解多路复用机制，了解容器化技术}
+
+      \item \en{\textbf{Network}: }
+            \zh{\textbf{网络}：熟悉 OSI 模型，了解常见网络协议（TCP，UDP，HTTP），了解 HTTP 2.0}
+
+      \item \en{\textbf{DataBase}: Familiarity with database usage, understanding of indexing and concurrency control}
+            \zh{\textbf{数据库}: 熟悉 MySQL 数据库使用，了解 NoSQL，了解 Key-Value 存储原理}
+
+      \item \en{\textbf{Distributed Systems}: }
+            \zh{\textbf{分布式系统}: 了解 CAP 理论，了解 Raft 算法，一致性哈希}% MIT6.824，PingCAP Talent Plan 等分布式课程。}
+
+      \item \en{\textbf{Developing Tools}: }
+            \zh{\textbf{开发工具}: 熟悉 Linux，了解 Git，Docker 等}
+\end{itemize}
+
+\section{\faInfo\ \en{Miscellaneous}\zh{杂项}}
+\begin{itemize}[parsep=0.5ex]
+      \item \en{}
+            \zh{兴趣：分布式系统、云、存储、缓存、数据库等}
+      \item \en{}
+            \zh{开源爱好者，喜欢折腾（日常使用 ArchLinux，Emacs），热爱编程，喜欢记录以及分享技术，写博客}
+      % \item \en{}
+      %       \zh{参加过 MIT6.828(Labs$_{3/8}$)，MIT6.824(Labs$_{2/4}$)，CMU15-445(Labs$_{1/4}$) 等国外课程}
+
+\end{itemize}
+
+\end{document}
