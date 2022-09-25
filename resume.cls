@@ -92,6 +92,11 @@
   \ifthenelse{\isempty{#1}}%
     {\href{#2}{#2}}
     {\href{#2}{#1}}}
+
+\newcommand{\gitea}[2][]{\faCodeFork\ 
+  \ifthenelse{\isempty{#1}}%
+    {\href{#2}{#2}}
+    {\href{#2}{#1}}}
 % defines one's homepage
 % usage: \homepage{<homepage>}
 \newcommand{\homepage}[2][]{\faLink\ 
