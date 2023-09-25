@@ -7,7 +7,7 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
       - name: Install LaTeX
-        run: sudo apt install -y make texlive-xetex texlive-latex-extra texlive-fonts-extra fonts-noto-cjk fonts-font-awesome
+        run: sudo apt install -y make latex-cjk-all texlive-xetex texlive-latex-extra texlive-fonts-extra fonts-noto-cjk fonts-font-awesome
       - name: Build
         run: make all
       - name: Release

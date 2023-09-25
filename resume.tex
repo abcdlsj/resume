@@ -16,8 +16,8 @@
 \name{\en{Songjian Li}\zh{李松健}}
 \basicInfo{
 \email{lisongjianshuai@gmail.com} \textperiodcentered\
-% \homepage[Blog]{https://blog.songjian.li/} \textperiodcentered\
-\github[GitHub]{https://github.com/abcdlsj}
+\homepage[Blog]{https://abcdlsj.github.io/} \textperiodcentered\
+\github[GitHub]{https://github.com/abcdlsj/}
 % \gitea[Gitea]{https://gitea.songjian.li}
 }
 
@@ -29,27 +29,15 @@
             \zh{电子信息科学与技术(计算机学院)}
 \end{itemize}
 
-% \section{\faUsers\ \en{Work Experience}\zh{工作经历}}
-% \en{\datedsubsection{\textbf{\href{https://www.didiglobal.com/}{DiDi Inc.}}, Beijing, China}{11/2020 -- 01/2021}}
-% \zh{\datedsubsection{\textbf{\href{https://www.didiglobal.com/}{北京嘀嘀无限科技发展有限公司}}}{2020/11 -- 2021/1}}
-% \en{\role{Business platform technology department}{R\&D Intern}}
-% \zh{\role{质量中台}{研发实习生}}
-% \begin{itemize}[parsep=0.5ex]
-%       \item \en{The main work is the maintenance and optimization of the internal quality testing platform (Go), as well as being responsible for the development of the internal testing platform and its version change (Python)}
-%             \zh{负责质量效能部门质量检测平台的维护(Go),以及内部测试流程框架的开发及其版本优化(Python)}
-%       \item \en{During the work period, I promoted the usage of the new version testing framework in many business lines, learned about CI/CD, and understood the use of development process platforms such as go-live and deployment}
-%             \zh{工作期间推进新版本测试框架在多条业务线的使用率,学习到关于 CI/CD 的知识,了解到上线、部署等开发流程平台的使用}
-% \end{itemize}
-
-\en{\datedsubsection{\textbf{\href{https://www.sea.com/products/shopee/}{Shopee Inc.}}, ShenZheng, China}{07/2021 -- 12/2022}}
+\en{\datedsubsection{\textbf{\href{https://www.sea.com/products/shopee/}{Shopee Inc.}}, ShenZheng, China}{07/2021 -- present}}
 \zh{\datedsubsection{\textbf{\href{https://www.sea.com/products/shopee/}{深圳虾皮信息科技发展有限公司}}}{2021/07 -- 至今}}
 \en{\role{Seller Platform}{Backend Software Engineer}}
 \zh{\role{卖家平台}{后端软件工程师}}
 \begin{itemize}[parsep=0.5ex]
       \item \en{}
-            \zh{负责 Shopee 卖家主站首页(内容/弹窗/侧边栏等), Seller 通用 Feature Toggle(多地区黑白名单) 等项目(项目 owner)}
+            \zh{负责 Shopee 卖家主站首页(内容/弹窗/侧边栏等), Seller 通用 Feature Toggle(多地区黑白名单) 项目(项目 owner)}
       \item \en{}
-            \zh{参与内部项目 Python->Go 的重构,参与组内其它需求的开发(内容包括但不限于 otp、oauth、s3、API 网关 等等)}
+            \zh{参与内部项目重构,参与组内其它需求的开发(内容包括但不限于 Oauth 对接、S3 数据迁移、网关插件编写 等等)}
       \item \en{}
             \zh{工作中能独立按需按时完成需求设计和实现}
 \end{itemize}
@@ -58,9 +46,11 @@
 \zh{\role{卖家开放平台(开发者平台)}{后端软件工程师}}
 \begin{itemize}[parsep=0.5ex]
       \item \en{}
-            \zh{负责内部 PartnerShip 项目(owner,类似 ToB 充值兑换券码平台)}
+            \zh{负责 PartnerShip 项目(owner,类似 ToB 充值兑换券码平台)}
       \item \en{}
-            \zh{负责 OpenAPI 平台的需求开发,负责部分技术优化的开发}
+            \zh{基于 SellerGateway(Openresty)开发 Log-Report 插件,实现调用日志脱敏、上报等功能}
+      \item \en{}
+            \zh{参与开发平台页面后台（内容搜索、admin 端）,参与内部中间件改造}
 \end{itemize}
 
 \section{\faGithubAlt\ \en{Work}\zh{工作项目}}
@@ -83,7 +73,7 @@
       \item \en{Used to restrict the display/operation of the seller's functions, providing HTTP and RPC interfaces}
             \zh{用于限制卖家的功能显示/操作,对外提供 HTTP 以及 RPC 查询接口}
       \item \en{The configuration side contains black and white list configuration, can use custom upload ID file configuration, can support the business side API configuration, but also through the Tag checkbox}
-            \zh{配置端包含黑白名单配置,支持上传/勾选 Tag/API 等多种方式配置,有回滚/user 端通知/Tag 标记等 Feature}
+            \zh{配置端包含黑白名单配置,支持上传/勾选 Tag/API 等多种方式配置,有回滚/user 端通知/Tag 标记等功能}
       \item \en{Other teams are strongly dependent on the module, the load is large real-time requirements, the background through multi-processing to optimize performance}
             \zh{其它团队强依赖模块,负载大实时性要求强,后台通过多协程处理优化性能}
 \end{itemize}
@@ -99,6 +89,14 @@
 \end{itemize}
 
 \section{\faGithubAlt\ \en{Portfolios}\zh{个人项目}}
+\datedsubsection{\textbf{Pipe}}{\url{https://github.com/abcdlsj/pipe}}
+\en{A domain support frp like tool}
+\zh{支持子域的内网转发工具}
+\begin{itemize}[parsep=0.5ex]
+      \item \en{}
+            \zh{使用 Go 实现,支持 TCP 协议,支持 Domain 配置}
+\end{itemize}
+
 \datedsubsection{\textbf{cLSM}}{\url{https://github.com/abcdlsj/clsm}}
 \en{SkipList-based implementation of LSM-Tree data structure}
 \zh{基于 SkipList 的 LSM-Tree 数据结构实现}
@@ -126,7 +124,7 @@
       \item \en{}
             \zh{喜欢折腾,搭建过 Gitea、Minio、Grafana 等服务}
       \item \en{}
-            \zh{热爱写代码和了解有趣的知识,自己平常实现过一些小项目(手写Git,简单全文搜索引擎,简单 BitTorrent 下载器,Bot 工具,静态博客生成器,DNS 服务器等等)}
+            \zh{热爱写代码和了解有趣的知识,喜欢实现小项目(手写Git,简单全文搜索引擎,简单 BitTorrent 下载器,Bot 工具,静态博客生成器,DNS 服务器，实现 Tokei 等等)}
 
 \end{itemize}
 
