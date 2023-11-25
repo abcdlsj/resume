@@ -11,11 +11,11 @@
 \hypersetup{hidelinks}
 
 \begin{document}
-\linespread{1.5}
+\linespread{1}
 
 \name{\en{Songjian Li}\zh{李松健}}
 \basicInfo{
-      \email{lisongjianshuai@gmail.com} \textperiodcentered\
+      \email{career@songjian.li} \textperiodcentered\
       \phone{+86-13225639902} \textperiodcentered\
       \homepage[Blog]{https://abcdlsj.github.io/} \textperiodcentered\
       \github[GitHub]{https://github.com/abcdlsj/}
@@ -24,89 +24,88 @@
 \section{\faGraduationCap\ \en{Education}\zh{教育经历}}
 \datedsubsection{\textbf{\en{HeFei University of Technology}\zh{合肥工业大学}}}{09/2017 -- 07/2021}
 \begin{itemize}
-      \item \en{Bachelor of Electronic Information Science and Technology, \textit{Computer College}}
-            \zh{本科,电子信息科学与技术（计算机学院）}
+      \item \en{Bachelor's Degree in Electronic Information Science and Technology, \textit{School of Computer Science}}
+            \zh{本科,电子信息科学与技术专业,\textit{计算机科学学院}}
 \end{itemize}
 
 \section{\faBriefcase\ \en{Work Experience}\zh{工作经历}}
-\en{\datedsubsection{\textbf{\href{https://www.sea.com/products/shopee/}{Shopee Inc.}}, ShenZheng, China}{07/2021 -- present}}
+\en{\datedsubsection{\textbf{\href{https://www.sea.com/products/shopee/}{Shopee Inc.}},ShenZheng,China}{07/2021 -- present}}
 \zh{\datedsubsection{\textbf{\href{https://www.sea.com/products/shopee/}{深圳虾皮信息科技发展有限公司}}}{2021/07 -- 至今}}
-\en{\role{Seller Platform/Openplatform}{Backend Software Engineer}}
-\zh{\role{卖家平台/Shopee 开放平台(开发者平台)}{后端开发工程师}}
+\en{\role{Seller Platform \& Open Platform}{Backend Software Engineer}}
+\zh{\role{卖家平台 \& Shopee 开放平台}{后端开发工程师}}
 \begin{itemize}[parsep=0.5ex]
-      \item \en{Developed and maintained Shopee seller main page (content/pop-up/sidebar, owner) and Seller Feature Toggle project (owner)}
+      \item \en{As the Owner,Develop and maintain seller main site Home-Page(Content/Popups/Sidebars) and seller Feature Toggle project}
             \zh{作为 Owner 开发和维护卖家主站首页（内容/弹窗/侧边栏）和卖家功能开关项目}
-      \item \en{Developed Lua plugins for OpenResty gateway to implement call logging and JSON data anonymization}
-            \zh{实现 OpenResty 网关的 OpenAPI 平台插件,实现 OpenAPI 调用日志上报和 JSON 脱敏规则,聚合归集数据后通过 ClickHouse 实现用户调用分析,通过 Elasticsearch 实现用户日志搜索}
-      \item \en{Participated in internal project refactoring, development of other team requirements (including OAuth integration, S3 data migration, gateway plugin development, etc.), development of Openplatform pages, and internal middleware improvement}
-            \zh{参与内部项目重构,开发团队需求（包括 OAuth 集成,S3 数据迁移,网关插件开发、改进内部中间件、Common 库维护等）}
-      \item \en{Proficient in commonly used middleware, able to independently design and implement solutions according to requirements}
-            \zh{熟练使用常用中间件,能够根据需求独立设计和实现解决方案}
+      \item \en{Participate in the daily development and maintenance of Shopee open platform system,mainly responsible for OpenAPI calling related and user console functions.}
+            \zh{参与 Shopee 开放平台系统日常开发和维护,主要负责 OpenAPI 调用相关和用户 Console 功能}
+      \item \en{Participate in project re-engineering, development team requirements(OAuth,S3 migration,Gateway plug-in,Internal middleware,Common library,etc.)}
+            \zh{参与项目重构,开发团队需求,包括但不限于 OAuth 集成,S3 数据迁移,网关插件开发、对接内部中间件、Common 库维护等}
+      \item \en{Skilled in using common middleware,can independently design and implement solutions}
+            \zh{熟练使用工作常用中间件,能够根据需求独立设计和实现解决方案}
 \end{itemize}
 
 \section{\faCloud\ \en{Projects}\zh{工作项目}}
 
-\datedsubsection{\textbf{\en{Seller Centre}\zh{Seller Centre}}}{}
-\begin{itemize}
-      \item \en{Seller Center: Developed modules for the home page, pop-ups, sidebars, error codes, tags, and other common modules for admin and user interfaces using the Gin framework}
-            \zh{使用 Gin 开发,包含主站首页内容、弹窗、侧边栏、错误码、标签等模块,以及 admin 端功能}
-      \item \en{Implemented asynchronous loading, caching, and message queue update mechanisms on the user side to improve response speed}
-            \zh{设计上功能划分清晰,业务拓展性强,广泛使用异步加载、缓存、消息 等方式提高用户体验}
+\datedsubsection{\textbf{\en{Seller Centre}\zh{Seller Centre}}}{\url{https://seller.shopee.co.id/}}
+\begin{itemize}[parsep=0.5ex]
+      \item \en{Developed modules for Home-Page,Pop-ups,Sidebars,Error-code,Tags,Feature Toggle and Admin modules}
+            \zh{使用 Gin/RPC 开发,包含主站首页内容、弹窗、侧边栏、错误码、标签、功能开关(Feature Toggle)等模块,以及对应 admin 端功能}
+      \item \en{Mainsite extensive use of Asynchronous,Caching,Messaging to improve user Experience}
+            \zh{主站主页功能内容丰富,设计上功能划分清晰,业务拓展性强,广泛使用异步加载、缓存、消息 等方式提高用户体验}
+      \item \en{Feature Toggle control for seller,includes multi-data Source,Version,Rollback,multi-level Query and so on}
+            \zh{Feature Toggle 用于卖家的功能显示/限制,包括多数据源支持、版本、回滚、多级查询等功能}
 \end{itemize}
 
-\datedsubsection{\textbf{\en{Feature Toggle}\zh{Feature Toggle}}}{}
-\begin{itemize}
-      \item \en{Used for controlling the display/operation of seller features, providing HTTP and RPC interfaces}
-            \zh{用于限制卖家的功能显示/操作,对外提供 HTTP/RPC 查询接口}
-      \item \en{Includes configuration options such as blacklists/whitelists, custom upload ID file configuration, API configuration for business teams, and tag checkboxes}
-            \zh{Souce 包括自定义上传、API 设置、预设 Tag 勾选等,支持黑白名单,包括回滚/user 端通知等功能}
-      \item \en{Highly dependent on by other teams, required to handle a large load with real-time requirements. Optimized performance using multi-processing}
-            \zh{卖家主站强依赖模块,负载大实时性要求强,提供不同级别外部接口}
+\datedsubsection{\textbf{\en{Partner Voucher}\zh{Partner Voucher}}}{\url{https://partnervoucher.shopee.co.id/}}
+\begin{itemize}[parsep=0.5ex]
+      \item \en{Partner Voucher Top-Up Service,independently complete the back-end design and development,and coordinate with multiple teams}
+            \zh{Partner 代金券充值服务,独立完成后端设计与开发,与多个团队联调}
+      \item \en{Developed by Gin, includes modules such as Order,User,Balance,Voucher management and so on}
+            \zh{使用 Gin 开发,包含 Order、User、Balance、Voucher 等模块}
 \end{itemize}
 
-\datedsubsection{\textbf{\en{Partner Voucher}\zh{Partner Voucher}}}{}
-\begin{itemize}
-      \item \en{Owner of the project, responsible for backend design and development, and coordination with multiple teams}
-            \zh{独立完成后端设计与开发,与多个团队联调}
-      \item \en{Developed using the Gin framework, it includes modules for recharge, redemption, coupon codes, orders, users, scheduled tasks, and email notifications}
-            \zh{使用 Gin 开发,包含充值,兑换,券码,订单,用户,定时任务,邮件通知等模块}
+\datedsubsection{\textbf{\en{OpenAPI Service}\zh{OpenAPI Service}}}{\url{https://open.shopee.com/}}
+\begin{itemize}[parsep=0.5ex]
+      \item \en{Used Gin/RPC framework to develop modules,including API call,commercial,vulnerability dashboard and sandbox modules}
+            \zh{使用 Gin/RPC 开发,包含 API 调用看板、商业分析看板、漏洞看板、沙箱环境等模块}
+      \item \en{Implemented in OpenResty,used for OpenAPI call log report and JSON sensitive rules,data for user analysis and searching}
+            \zh{实现 OpenResty 网关插件,用于 OpenAPI 调用日志上报和 JSON 脱敏规则,数据用于用户调用分析和日志搜索}
 \end{itemize}
+
 
 \section{\faGithubAlt\ \en{Personal Projects}\zh{个人项目}}
 \datedsubsection{\textbf{\en{Gnar}\zh{Gnar}}}{\url{https://github.com/abcdlsj/gnar}}
 \en{A tool similar to frp that supports subdomain forwarding}
 \zh{内网端口转发工具,类似于 Frp/Ngork}
 \begin{itemize}[parsep=0.5ex]
-      \item \en{Implemented in Go, supports TCP/UDP protocols}
-            \zh{支持 TCP/UDP 协议}
-      \item \en{Support multiplexing connections}
-            \zh{支持 TCP 连接多路复用，使用 Yamux}
+      \item \en{Forwarding protocol support TCP/UDP, Crontol connection using TCP, using Yamux support multiplexing.}
+            \zh{转发协议支持 TCP/UDP,Crontol 连接采用 TCP,使用 Yamux 支持多路复用}
 \end{itemize}
 
 \datedsubsection{\textbf{\en{cLSM}\zh{cLSM}}}{\url{https://github.com/abcdlsj/clsm}}
 \en{An implementation of LSM-Tree data structure based on SkipList}
 \zh{基于 SkipList 的 LSM-Tree 数据结构实现}
 \begin{itemize}[parsep=0.5ex]
-      \item \en{Memory layer uses SkipList as the underlying data structure, and disk layer uses ordered key-value pairs}
+      \item \en{Memory level uses SkipList data structure, disk level uses ordered key-value pairs.}
             \zh{内存层使用 SkipList 数据结构,磁盘层使用有序键值对}
 \end{itemize}
 
 \section{\faCogs\ \en{Skills}\zh{技能}}
 \begin{itemize}[parsep=0.5ex]
-      \item \en{\textbf{Programming Languages}:Familiar with Go foundation, C++, Python, Lua and other languages, familiar with common data structures and algorithms}
-            \zh{\textbf{编程语言}: 熟悉 Go 基础,了解 C++/Python/Lua,熟悉常用数据结构与算法}
-      \item \en{\textbf{System}:Processes, memory, Linux, multiplexing, containerization techniques, common network protocols, etc.}
+      \item \en{\textbf{Programming Languages}:Familiar with Go foundation,C++,Python,Lua,familiar with common data structures and algorithms}
+            \zh{\textbf{编程语言}: 熟悉 Go,了解 C++、Python、Lua,熟悉常用数据结构与算法}
+      \item \en{\textbf{System}:Processes,memory,Linux,multiplexing,containerization techniques,common network protocols,etc}
             \zh{\textbf{系统}: 进程、内存、Linux、多路复用、容器化技术、常见网络协议等}
-      \item \en{\textbf{Milleware Framework}:Familiar with MySQL database use,understand KV storage(LSM-Tree)}
-            \zh{\textbf{中间件}: 熟悉 MySQL/Redis,了解 ClickHouse/Elasticsearch,具备设计和优化数据库使用的能力}
+      \item \en{\textbf{Milleware Framework}:Familiar with MySQL/Redis,able to use common middleware,have the ability to design and optimize the use of database}
+            \zh{\textbf{中间件}: 熟悉 MySQL/Redis,能使用常用中间件,具备设计和优化数据库使用的能力}
 \end{itemize}
 
 \section{\faInfo\ \en{Miscellaneous}\zh{杂项}}
 \begin{itemize}[parsep=0.5ex]
-      \item \en{}
-            \zh{喜欢折腾和探索,喜欢搭建 Self-hosted 服务}
-      \item \en{}
-            \zh{喜欢周末写点简单的项目,包括但不限于 Go Git, Tfidf wiki 搜索引擎,BitTorrent downloader,IM bot,Static-Blog generator,DNS server,line counter(Tokei/Scc) 等等}
+      \item \en{Like to implement Small Side Project,includes Go Git,Tfidf wiki search engine,BitTorrent downloader,IM bot,Static-Blog generator,DNS server,line counter(Tokei/Scc),Proxy,Serverless Framework,Pastebin}
+            \zh{喜欢实现 Small Side Project,包括 Go Git、Tfidf wiki 搜索引擎、BitTorrent downloader、IM bot、Static-Blog generator、line counter(Tokei/Scc)、Proxy、Serverless Framework、Pastebin 等等}
+      \item \en{I love to explore, share and record.}
+            \zh{喜欢折腾和探索,热爱分享和记录}
 \end{itemize}
 
 \end{document}
