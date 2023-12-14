@@ -7,7 +7,9 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
       - name: Install LaTeX
-        run: sudo apt install -y make latex-cjk-all texlive-xetex texlive-latex-extra texlive-fonts-extra fonts-noto-cjk fonts-font-awesome poppler-utils
+        run: | 
+          sudo apt update
+          sudo apt install -y make latex-cjk-all texlive-xetex texlive-latex-extra texlive-fonts-extra fonts-noto-cjk fonts-font-awesome poppler-utils
       - name: Build
         run: make all
       - name: Combine en and zh PDF
