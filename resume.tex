@@ -36,49 +36,50 @@
 \begin{itemize}[parsep=0.5ex]
       \item \en{As the Owner,Develop and maintain seller main site Home-Page(Content/Popups/Sidebars) and seller Feature-Toggle project}
             \zh{作为 Owner 开发和维护卖家主站首页（内容/弹窗/侧边栏）和卖家功能开关项目}
-      \item \en{Participate in the daily development and maintenance of Shopee open platform system,mainly responsible for OpenAPI calling related and user console functions.}
-            \zh{参与 Shopee 开放平台系统日常开发和维护,主要负责 OpenAPI 调用相关和用户 Console 功能}
-      \item \en{Participate in project re-engineering, development team requirements(including OAuth,S3 migration,Gateway plug-in,Internal middleware,Common library,etc.)}
-            \zh{参与项目重构,开发团队需求,包括但不限于 OAuth 集成,S3 数据迁移,网关插件开发、对接内部中间件、Common 库维护等}
-      \item \en{Skilled in using common middleware(Kafka,ElasticSearch,ClickHouse,etc),can independently design and implement solutions}
-            \zh{熟练使用工作常用中间件(Kafka,ElasticSearch,ClickHouse,etc)能够根据需求独立设计和实现解决方案}
+      \item \en{Participate in the development of Shopee open platform system, mainly responsible for the development of user experience related functions (logging, analyzing)}
+            \zh{参与 Shopee 开放平台系统开发,主要负责提升用户体验相关功能（日志、分析、搜索）的开发}
+      \item \en{Participate in project re-engineering, development team requirements(including OAuth,S3/DB migration,Gateway plug-in,Internal middleware,Common library,etc)}
+            \zh{参与项目重构,开发团队其它需求,包括但不限于网关插件开发、OAuth 集成、S3/DB 数据迁移、内部框架对接、Common 库维护等}
+      \item \en{Mainly use Go language, interface protocol using HTTP/RPC, skilled application of commonly used middleware (MySQL, Redis, Kafka, ElasticSearch, ClickHouse, etc), able to independently according to the needs of the design, select the appropriate solution and implementation}
+            \zh{主要使用 Go 语言,接口协议采用 HTTP/RPC,熟练应用常用中间件(MySQL,Redis,Kafka,ElasticSearch,ClickHouse,etc),能够独立根据需求设计、选择合适的解决方案并实现}
 \end{itemize}
 
 \section{\faCloud\ \en{Projects}\zh{工作项目}}
 
-\datedsubsection{\textbf{\en{Seller Centre}\zh{Seller Centre}}}{\url{https://seller.shopee.co.id/}}
+\datedsubsection{\textbf{\en{Open Service}\zh{Open Service}}}{\url{https://open.shopee.com/}}
 \begin{itemize}[parsep=0.5ex]
-      \item \en{Developed modules for Home-Page,Pop-ups,Sidebars,Error-code,Tags,Feature-Toggle and Admin modules}
-            \zh{使用 Gin/RPC 开发,包含主站首页内容、弹窗、侧边栏、错误码、标签、功能开关(Feature-Toggle)等模块,以及对应 admin 端功能}
-      \item \en{Mainsite extensive use of Asynchronous,Caching,Messaging to improve user Experience}
-            \zh{主站主页功能内容丰富,设计上功能划分清晰,业务拓展性强,广泛使用异步加载、缓存、消息 等方式提高用户体验}
-      \item \en{Feature-Toggle control for seller,includes multi-data Source,Version,Rollback,multi-level Query and so on}
-            \zh{Feature-Toggle 用于卖家的功能显示/限制,包括多数据源支持、版本、回滚、多级查询等功能}
+      \item \en{Add OpenResty gateway plug-in for OpenAPI call log reporting (field desensitization, structure normalization), data transfer through Kafka, consumption processing and write to HBase/ClickHouse/ElasticSearch, to provide support for subsequent functions}
+            \zh{添加 OpenResty 网关插件,用于 OpenAPI 调用日志上报（字段脱敏、结构规范化）,数据通过 Kafka 传输,消费处理后写入到 HBase/ClickHouse/ElasticSearch 中,为后续功能提供支持}
+      \item \en{Developed with Gin/RPC, added key modules such as invocation dashboard, log search, document search, business analysis dashboard, vulnerability dashboard, etc}
+            \zh{添加了调用看板、日志搜索、文档搜索、商业分析看板、漏洞看板等关键模块}
+      \item \en{Improves the user experience and observability of the platform, and provides new requirement data support for the PM team}
+            \zh{提升了用户体验和平台可观测性,为 PM 团队提供新需求数据支持}
 \end{itemize}
 
 \datedsubsection{\textbf{\en{Partner Voucher}\zh{Partner Voucher}}}{\url{https://partnervoucher.shopee.co.id/}}
 \begin{itemize}[parsep=0.5ex]
-      \item \en{Partner Voucher Top-Up Service,independently complete the back-end design and development,and coordinate with multiple teams}
-            \zh{Partner 代金券充值服务,独立完成后端设计与开发,与多个团队联调}
       \item \en{Developed by Gin, includes modules such as Order,User,Balance,Voucher management and so on}
-            \zh{使用 Gin 开发,包含 Order、User、Balance、Voucher 等模块}
+            \zh{Partner 充值券码管理服务,包含 Order、User、Balance、Voucher 等模块,并提供相应的 Admin 功能}
+      \item \en{Optimized the Partner recharge and redemption process to improve Ops efficiency. Independently completed the back-end design and development and coordinate with multiple teams, responsible for promoting the development part of the project and managing the progress.}
+            \zh{优化了 Partner 充值兑换流程,提高了 Ops 效率。独立完成后端设计与开发并与多个团队联调,负责推进项目开发部分并管理进度}
 \end{itemize}
 
-\datedsubsection{\textbf{\en{OpenAPI Service}\zh{OpenAPI Service}}}{\url{https://open.shopee.com/}}
+\datedsubsection{\textbf{\en{Seller Centre}\zh{Seller Centre}}}{\url{https://seller.shopee.co.id/}}
 \begin{itemize}[parsep=0.5ex]
-      \item \en{Used Gin/RPC framework to develop modules,including API call,commercial,vulnerability dashboard and sandbox modules}
-            \zh{使用 Gin/RPC 开发,包含 API 调用看板、商业分析看板、漏洞看板、沙箱环境等模块}
-      \item \en{Implemented in OpenResty,used for OpenAPI call log report and JSON sensitive rules,data for user analysis and searching}
-            \zh{实现 OpenResty 网关插件,用于 OpenAPI 调用日志上报和 JSON 脱敏规则,数据用于用户调用分析和日志搜索}
+      \item \en{Developed modules for Home-Page,Pop-ups,Sidebars,Error-code,Tags,Feature-Toggle and Admin modules}
+            \zh{负责主站首页内容、弹窗、侧边栏、错误码、标签、功能开关(Feature Toggle)等模块,以及对应的 admin 端功能}
+      \item \en{Feature-Toggle control for seller,includes multi-data Source,Version,Rollback,multi-level Query and so on}
+            \zh{功能开关用于卖家的功能 显示/限制,包括多数据源支持、版本、回滚、多级查询等功能}
+      \item \en{The project is rich in content, the design function is clearly delineated, the business expansion is strong, and asynchronous loading, caching, messaging and other ways to improve the user experience are widely used.}
+            \zh{项目内容丰富,设计功能划分清晰,业务拓展性强,广泛使用异步加载、缓存、消息等方式提高用户体验}
 \end{itemize}
-
 
 \section{\faGithubAlt\ \en{Personal Projects}\zh{个人项目}}
 \datedsubsection{\textbf{\en{Gnar}\zh{Gnar}}}{\url{https://github.com/abcdlsj/gnar}}
 \en{A tool similar to frp that supports subdomain forwarding}
 \zh{内网端口转发工具,类似于 Frp/Ngork}
 \begin{itemize}[parsep=0.5ex]
-      \item \en{Forwarding protocol support TCP/UDP, Crontol connection using TCP, using Yamux support multiplexing.}
+      \item \en{Forwarding protocol support TCP/UDP, Crontol connection using TCP, using Yamux support multiplexing}
             \zh{转发协议支持 TCP/UDP,Crontol 连接采用 TCP,使用 Yamux 支持多路复用}
 \end{itemize}
 
@@ -86,7 +87,7 @@
 \en{An implementation of LSM-Tree data structure based on SkipList}
 \zh{基于 SkipList 的 LSM-Tree 数据结构实现}
 \begin{itemize}[parsep=0.5ex]
-      \item \en{Memory level uses SkipList data structure, disk level uses ordered key-value pairs.}
+      \item \en{Memory level uses SkipList data structure, disk level uses ordered key-value pairs}
             \zh{内存层使用 SkipList 数据结构,磁盘层使用有序键值对}
 \end{itemize}
 
@@ -94,10 +95,10 @@
 \begin{itemize}[parsep=0.5ex]
       \item \en{\textbf{Programming Languages}:Familiar with Go foundation,C++,Python,Lua,familiar with common data structures and algorithms}
             \zh{\textbf{编程语言}:熟悉 Go,了解 C++、Python、Lua,熟悉常用数据结构与算法}
-      \item \en{\textbf{System}:Processes,memory,Linux,multiplexing,containerization techniques,common network protocols,etc}
-            \zh{\textbf{系统}:进程、内存、Linux、多路复用、容器化技术、常见网络协议等}
-      \item \en{\textbf{Milleware Framework}:Familiar with MySQL/Redis,able to use common middleware,have the ability to design and optimize the use of database}
-            \zh{\textbf{中间件}:熟悉 MySQL/Redis,能使用常用中间件,具备设计和优化数据库使用的能力}
+      \item \en{\textbf{System \& Network}:Processes,memory,Linux,multiplexing,containerization techniques,common network protocols,etc}
+            \zh{\textbf{系统 \& 网络}:进程、内存、Linux、多路复用、容器化技术、常见网络协议等}
+      \item \en{\textbf{Milleware Framework}:Knowledge of commonly used middleware (MySQL/Redis/Kafka/ElasticSearch/ClickHouse), ability to choose reasonable middleware according to business needs and implementation}
+            \zh{\textbf{中间件}:了解常用中间件（MySQL/Redis/Kafka/ElasticSearch/ClickHouse）,能根据业务需求选择合理的中间件并实现}
 \end{itemize}
 
 \section{\faInfo\ \en{Miscellaneous}\zh{杂项}}
