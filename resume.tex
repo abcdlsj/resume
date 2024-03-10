@@ -34,26 +34,34 @@
 \en{\role{Seller Platform \& Open Platform}{Backend Software Engineer}}
 \zh{\role{卖家平台 \& Shopee 开放平台}{后端开发工程师}}
 \begin{itemize}[parsep=0.5ex]
-      \item \en{As the Owner,Develop and maintain seller main site Home-Page(Content/Popups/Sidebars) and seller Feature-Toggle project}
-            \zh{作为 Owner 开发和维护卖家主站首页（内容/弹窗/侧边栏）和卖家功能开关项目}
-      \item \en{Participate in the development of Shopee open platform system, mainly responsible for the development of user experience related functions (logging, analyzing)}
-            \zh{参与 Shopee 开放平台系统开发,主要负责提升用户体验相关功能（日志、分析、搜索）的开发}
-      \item \en{Participate in project re-engineering, development team requirements(including OAuth,S3/DB migration,Gateway plug-in,Internal middleware,Common library,etc)}
-            \zh{参与项目重构,开发团队其它需求,包括但不限于网关插件开发、OAuth 集成、S3/DB 数据迁移、内部框架对接、Common 库维护等}
-      \item \en{Mainly use Go language, interface protocol using HTTP/RPC, skilled application of commonly used middleware (MySQL, Redis, Kafka, ElasticSearch, ClickHouse, etc), able to independently according to the needs of the design, select the appropriate solution and implementation}
-            \zh{主要使用 Go 语言,接口协议采用 HTTP/RPC,熟练应用常用中间件(MySQL,Redis,Kafka,ElasticSearch,ClickHouse,etc),能够独立根据需求设计、选择合适的解决方案并实现}
+      \item \en{In the seller platform is responsible for the development and maintenance of the core modules of the main site (home page, pop-up windows, sidebars, feature-toggle), to improve the seller experience}
+            \zh{在卖家平台负责开发和维护主站核心模块(首页、弹窗、侧边栏、功能开关),提升卖家及运营使用体验}
+      \item \en{Mainly responsible for the development of developer-related functions in the open platform (log, analyze, search), to improve the experience of developers and operations}
+            \zh{在开放平台主要负责开发者相关功能的开发(日志、分析、搜索),提升开发者及运营体验}
+      \item \en{Participate in a variety of projects, including project refactoring, gateway plug-in development, middleware integration, standalone projects, common library maintenance, and seller account system construction}
+            \zh{参与多元化项目,包括项目重构、网关开发、中间件集成、独立项目、Common库维护及卖家账号系统构建等}
+      \item \en{Mainly use the Go language, interface protocols using HTTP/RPC, proficient application of common middleware (MySQL, Redis, Kafka, ElasticSearch, ClickHouse, etc)}
+            \zh{主要使用 Go 语言,接口协议采用 HTTP/RPC,熟练应用常用中间件(MySQL,Redis,Kafka,ElasticSearch,ClickHouse,etc)}
+      \item \en{Ability to design and implement solutions independently, good at cross-departmental coordination and communication, effectively manage project schedule and ensure on-time delivery}
+            \zh{具有独立设计和实施解决方案的能力,善于跨部门协作与沟通,有效管理项目进度并确保按时交付}
 \end{itemize}
 
 \section{\faCloud\ \en{Projects}\zh{工作项目}}
 
 \datedsubsection{\textbf{\en{Open Service}\zh{Open Service}}}{\url{https://open.shopee.com/}}
 \begin{itemize}[parsep=0.5ex]
-      \item \en{Add OpenResty gateway plug-in for OpenAPI call log reporting (field desensitization, structure normalization), data transfer through Kafka, consumption processing and write to HBase/ClickHouse/ElasticSearch, to provide support for subsequent functions}
-            \zh{添加 OpenResty 网关插件,用于 OpenAPI 调用日志上报（字段脱敏、结构规范化）,数据通过 Kafka 传输,消费处理后写入到 HBase/ClickHouse/ElasticSearch 中,为后续功能提供支持}
       \item \en{Developed with Gin/RPC, added key modules such as invocation dashboard, log search, document search, business analysis dashboard, vulnerability dashboard, etc}
-            \zh{添加了调用看板、日志搜索、文档搜索、商业分析看板、漏洞看板等关键模块}
-      \item \en{Improves the user experience and observability of the platform, and provides new requirement data support for the PM team}
-            \zh{提升了用户体验和平台可观测性,为 PM 团队提供新需求数据支持}
+            \zh{添加了调用看板、日志搜索、商业分析看板和漏洞看板等关键模块,增强了平台的功能性,提升了用户体验和平台可观测性}
+      \item \en{Implemented OpenResty gateway plug-in for OpenAPI call log reporting (field desensitization, log structure normalization), data transfer through Kafka, write to HBase/ClickHouse/ElasticSearch after processing , to provide support for subsequent features}
+            \zh{实现了 OpenResty 网关插件,用于开发者调用日志上报(字段脱敏,日志结构规范化),为其它功能提供支持}
+\end{itemize}
+
+\datedsubsection{\textbf{\en{Seller Centre}\zh{Seller Centre}}}{\url{https://seller.shopee.co.id/}}
+\begin{itemize}[parsep=0.5ex]
+      \item \en{Contains the main home page content, pop-up windows and sidebars and other modules, widely used asynchronous loading, caching and message queues and other technologies, significantly improving the site's responsiveness and seller experience}
+            \zh{包含主站首页内容、弹窗和侧边栏等模块,广泛采用了异步加载、缓存和消息队列等技术,显著提升了网站的响应速度和卖家使用体验}
+      \item \en{Feature toggle are used to flexibly control the display and limitation of functions, including multi-data source support, version rollback and multi-level query, etc., which facilitates efficient management of operations}
+            \zh{功能开关用于灵活控制功能的显示和限制,包括多数据源支持、版本回滚和多级查询等功能,便于运营高效管理}
 \end{itemize}
 
 \datedsubsection{\textbf{\en{Partner Voucher}\zh{Partner Voucher}}}{\url{https://partnervoucher.shopee.co.id/}}
@@ -61,17 +69,7 @@
       \item \en{Developed by Gin, includes modules such as Order,User,Balance,Voucher management and so on}
             \zh{Partner 充值券码管理服务,包含 Order、User、Balance、Voucher 等模块,并提供相应的 Admin 功能}
       \item \en{Optimized the Partner recharge and redemption process to improve Ops efficiency. Independently completed the back-end design and development and coordinate with multiple teams, responsible for promoting the development part of the project and managing the progress.}
-            \zh{提供在线充值兑换流程,提高了运营\/用户效率。独立完成后端设计与开发并与多个团队联调,负责推进项目开发部分并管理进度}
-\end{itemize}
-
-\datedsubsection{\textbf{\en{Seller Centre}\zh{Seller Centre}}}{\url{https://seller.shopee.co.id/}}
-\begin{itemize}[parsep=0.5ex]
-      \item \en{Developed modules for Home-Page,Pop-ups,Sidebars,Error-code,Tags,Feature-Toggle and Admin modules}
-            \zh{负责主站首页内容、弹窗、侧边栏、错误码、标签、功能开关(Feature Toggle)等模块,以及对应的 admin 端功能}
-      \item \en{Feature-Toggle control for seller,includes multi-data Source,Version,Rollback,multi-level Query and so on}
-            \zh{功能开关用于卖家的功能 显示/限制,包括多数据源支持、版本、回滚、多级查询等功能}
-      \item \en{The project is rich in content, the design function is clearly delineated, the business expansion is strong, and asynchronous loading, caching, messaging and other ways to improve the user experience are widely used.}
-            \zh{项目内容丰富,设计功能划分清晰,业务拓展性强,广泛使用异步加载、缓存、消息等方式提高用户体验}
+            \zh{提供在线充值兑换流程,提高了运营和用户效率。独立完成后端设计与开发并与多个团队联调,负责推进项目开发部分并管理进度}
 \end{itemize}
 
 \section{\faGithubAlt\ \en{Personal Projects}\zh{个人项目}}
@@ -98,7 +96,7 @@
       \item \en{\textbf{System \& Network}:Processes,memory,Linux,multiplexing,containerization techniques,common network protocols,etc}
             \zh{\textbf{系统 \& 网络}:进程、内存、Linux、多路复用、容器化技术、常见网络协议等}
       \item \en{\textbf{Milleware Framework}:Knowledge of commonly used middleware (MySQL/Redis/Kafka/ElasticSearch/ClickHouse), ability to choose reasonable middleware according to business needs and implementation}
-            \zh{\textbf{中间件}:了解常用中间件（MySQL/Redis/Kafka/ElasticSearch/ClickHouse）,能根据业务需求选择合理的中间件并实现}
+            \zh{\textbf{中间件}:了解常用中间件及组件(MySQL/Redis/Kafka/ElasticSearch/ClickHouse),能根据业务需求选择合理的中间件并接入}
 \end{itemize}
 
 \section{\faInfo\ \en{Miscellaneous}\zh{杂项}}
