@@ -35,37 +35,35 @@
 \zh{\role{卖家平台 \& Shopee 开放平台}{后端开发工程师}}
 \begin{itemize}[parsep=0.5ex]
       \item \en{Responsible for the development and optimization of related open platform functions (calling,analysis,search,security,push delay optimization),and the development and maintenance of the core modules of the seller's main website (homepage,pop-ups,sidebar,function switches,Admin platform)}
-            \zh{负责开放平台相关功能的开发和优化(调用、分析、搜索、安全性、推送延迟优化等),开发并维护卖家主站模块(弹窗、侧边栏、功能开关、Admin RBAC 平台等)}
+            \zh{开发和优化 Shopee 开放平台相关功能(鉴权、调用、延迟优化等);开发并维护卖家主站模块(弹窗、侧边栏、问卷系统、Admin RBAC 平台等)}
       \item \en{Participate in a variety of projects,including project refactoring,gateway plug-in development,middleware integration,common library maintenance,and seller account system construction}
-            \zh{参与多元化项目,包括项目重构、网关开发、中间件集成、Common库维护及卖家账号系统构建等}
-      \item \en{Mainly use the Go language,interface protocols using HTTP/RPC,proficient application of common middleware and backend development technology}
-            \zh{主要使用 Go 语言,接口协议采用 HTTP/RPC,熟练应用常用中间件和后台开发技术}
-      \item \en{Ability to design and implement solutions independently,good at cross-departmental coordination and communication,effectively manage project schedule and ensure on-time delivery}
-            \zh{具有独立设计和实施解决方案的能力,善于跨部门协作与沟通,有效管理项目进度并确保按时交付}
+            \zh{参与多元化项目,包括项目重构、网关开发、中间件集成、Common库维护、卖家账号系统构建等}
+      \item \en{Proficient application of common middleware and backend development technology}
+            \zh{熟练应用常用中间件和后台开发技术;具有独立设计和实施解决方案的能力,善于跨部门协作与沟通,有效管理项目进度并确保按时交付}
 \end{itemize}
 
 \section{\faCloud\ \en{Projects}\zh{工作项目}}
 
-\datedsubsection{\textbf{\en{Open Service}\zh{Open Service}}}{\url{https://open.shopee.com/}}
+\datedsubsection{\textbf{\en{Open Service}\zh{开放平台服务}}}{\url{https://open.shopee.com/}}
 \begin{itemize}[parsep=0.5ex]
-      \item \en{Added multiple functions of the user console (call Kanban,log search,business analytics,vulnerabilities board,etc) to enhance the functionality of the platform,improve the user experience and platform observability}
-            \zh{添加了用户控制台多个功能(调用看板、日志搜索、商业分析、漏洞看板等),增强了平台的功能性,提升了用户体验和平台可观测性}
       \item \en{Implemented OpenResty gateway plugin for developers to call the log report (field desensitization,log structure normalization),access to Shopee data platform to provide data source support for other functions}
-            \zh{实现了 OpenResty 网关插件,用于开发者调用日志上报(字段脱敏、日志结构规范化),为其它功能和需求提供数据支持}
-\end{itemize}
-
-\datedsubsection{\textbf{\en{Seller Centre}\zh{Seller Centre}}}{\url{https://seller.shopee.co.id/}}
-\begin{itemize}[parsep=0.5ex]
-      \item \en{Contains the main home page content,pop-up windows and sidebars and other modules,widely used asynchronous loading,caching and message queues and other technologies,significantly improving the site's responsiveness and seller experience}
-            \zh{包含主站首页内容、弹窗和侧边栏等模块,广泛采用了异步加载、缓存和消息队列等技术,显著提升了网站的响应速度和卖家使用体验}
-      \item \en{Feature toggle are used to flexibly control the display and limitation of functions,including multi-data source support,version rollback and multi-level query,etc.,which facilitates efficient management of operations}
-            \zh{功能开关用于灵活控制功能的显示和限制,包括多数据源支持、版本回滚和多级查询等功能,便于运营高效管理}
+            \zh{基于 OpenResty 网关实现插件,上报开发者调用日志(50k+ QPS),提升平台可观测性并为其它需求提供数据支持}
+      \item \en{Added multiple functions of the user console (call Kanban,log search,business analytics,vulnerabilities board,etc) to enhance the functionality of the platform,improve the user experience and platform observability}
+            \zh{添加了用户控制台多个功能(调用统计、商业分析、日志搜索、漏洞看板等),增强了平台的功能性,提升了用户体验}
 \end{itemize}
 
 \datedsubsection{\textbf{\en{Partner Voucher}\zh{Partner Voucher}}}{\url{https://partnervoucher.shopee.co.id/}}
 \begin{itemize}[parsep=0.5ex]
       \item \en{Partner top-up voucher code management service, providing online top-up and exchange process, improving operation and user efficiency. Complete back-end design and development independently and coordinate with multiple teams to advance the project development part and manage the schedule}
-            \zh{Partner 充值券码管理服务,提供在线充值兑换流程,提高了运营和用户效率。独立完成后端设计与开发并与多个团队联调,负责推进项目开发部分并管理进度}
+            \zh{在线充值券码管理服务,提供在线充值兑换流程替代原有线下充值流程;独立完成后端设计与开发并与多个团队联调,负责推进项目开发部分并管理进度}
+\end{itemize}
+
+\datedsubsection{\textbf{\en{Seller Centre}\zh{卖家平台服务}}}{\url{https://seller.shopee.co.id/}}
+\begin{itemize}[parsep=0.5ex]
+      \item \en{Contains the main home page content,pop-up windows and sidebars and other modules,widely used asynchronous loading,caching and message queues and other technologies,significantly improving the site's responsiveness and seller experience}
+            \zh{主站服务包含首页内容、弹窗和侧边栏等模块,广泛采用了异步加载、缓存和消息队列等技术,显著提升了网站的响应速度和卖家使用体验}
+      \item \en{Feature toggle are used to flexibly control the display and limitation of functions,including multi-data source support,version rollback and multi-level query,etc.,which facilitates efficient management of operations}
+            \zh{功能开关服务用于灵活控制功能的显示和限制,可配置项丰富,具备版本特性,便于运营高效管理}
 \end{itemize}
 
 \section{\faGithubAlt\ \en{Personal Projects}\zh{个人项目}}
