@@ -165,7 +165,7 @@
         - Seller platform is responsible for the direction of public capacity, account, login, etc., including API gateway, seller master station, unified login, master-sub-account system, and function switch project.
         - Mainly responsible for the development of the seller's main station and function switch project, design and implement several unified framework modules, such as exchange rate, pop-up window, audit system, export center, marking, etc. Design and implement the announcement, sidebar, shop settings, etc. of the main station.
         - Design and realize homepage modules such as main site announcement, sidebar, store settings, etc. Maintain services such as questionnaire system and management platform.
-        - Participate in the development of seller department #openresty gateway, design and maintain plug-in system.)
+        - Participate in the development of seller department #openresty gateway, design and maintain plug-in system.
       ],
       zh: cventry(
         bl: [Shopee 卖家平台, Backend Development],
@@ -190,7 +190,7 @@
         bl: [Shopee 开放平台（同组不同业务）, Backend Development],
         br: [#translate-date(12, 2022) -- #current],
       )[
-        - 业务介绍：开放平台提供 OpenAPI 鉴权授权、消息推送、门户站点和沙箱环境等功能，为开发者提供全面的商家管理能力。
+        - 业务介绍：开放平台提供 OpenAPI 鉴权授权、消息推送、沙箱环境和门户站点等业务，为开发者提供全面的商家管理能力。
         - 主要负责网关插件、开发者控制台和推送系统等服务，提高鉴权授权性能，丰富控制台功能，提升系统可观测性和提高用户体验。
         - 参与横向项目开发，如地区拆分、异地灾备、重构、降本增效和服务治理等。
       ],
