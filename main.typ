@@ -204,11 +204,11 @@
 
     translate(
       en: [
-        - Based on OpenResty, developed in Lua, including HTTP/RPC/RPC-Over-HTTP, traffic control, gray rules, authentication, etc.
+        - Based on OpenResty, developed in Lua, including HTTP/RPC/HTTP-Over-RPC, traffic control, gray rules, authentication, etc.
         - Based on plugin system, developed and maintained multiple plugins, including OpenAPI report plugin for calling statistics（60k+QPS），data sent to Kafka for other systems to provide data support.
       ],
       zh: [
-        - 基于 OpenResty 实现，使用 Lua 语言开发，包括请求转发（HTTP/RPC/RPC-Over-HTTP）、流量控制、灰度规则和认证鉴权等功能。
+        - 基于 OpenResty 实现，使用 Lua 语言开发，包括请求转发（HTTP/RPC/HTTP-Over-RPC）、流量控制、灰度规则和认证鉴权等功能。
         - 基于插件系统开发并维护多个插件，其中 OpenAPI 上报插件用于上报开发者调用记录（60k+QPS），实现解析规则用于打码上报数据。数据经由 Kafka 传输到 ES/Hive/Clickhouse，为其他系统提供数据支持。
       ],
     )
