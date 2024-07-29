@@ -264,8 +264,8 @@
         - Independently complete backend design and development, and work with multiple teams to achieve project development and management.
       ],
       zh: [
-        - 在线充值券码管理服务，提供组织管理、余额、订单和审批流等功能，提升用户体验和运营效率。
-        - 独立完成后端设计与开发，并与多个团队联调，负责推进项目开发部分并管理进度。
+        - 企业优惠券购买管理平台，提供组织管理、余额、订单和审批流等功能，创造数百万美元的收益。
+        - 独立完成平台后端设计与开发，负责跨团队推进项目开发部分，及时管理进度。
       ],
     )
   }
