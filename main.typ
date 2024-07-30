@@ -171,7 +171,7 @@
         bl: [Shopee 卖家平台, Backend Development],
         br: [#translate-date(7, 2021) -- #translate-date(12, 2022)],
       )[
-        - 业务介绍：卖家平台负责站点首页、公共能力、主子账号、统一登录、API 网关等方向，为本地和跨境店铺提供商家端站点，为运营提供高效运营工具。
+        - 业务介绍：卖家平台负责站点首页、公共能力、主子账号、统一登录和API 网关等方向，为本地和跨境店铺提供商家端站点，为运营提供高效运营工具。
         - 负责设计并实现汇率、公告、弹窗、审核系统、侧边栏等模块，维护问卷系统、功能开关和运营平台等服务。
         - 参与开发卖家部门 #openresty 网关，设计并维护内部插件。
       ],
@@ -208,8 +208,8 @@
         - Based on plugin system, developed and maintained multiple plugins, including OpenAPI report plugin for calling statistics（60k+QPS），data sent to Kafka for other systems to provide data support.
       ],
       zh: [
-        - 基于 OpenResty 实现，使用 Lua 语言开发，包括请求转发（HTTP/RPC/HTTP-Over-RPC）、流量控制、灰度规则和认证鉴权等功能。
-        - 基于插件系统开发并维护多个插件，其中 OpenAPI 上报插件用于上报开发者调用记录（60k+QPS），实现解析规则用于打码上报数据。数据经由 Kafka 传输到 ES/Hive/Clickhouse，为其他系统提供数据支持。
+        - 项目基于 OpenResty 实现，使用 Lua 语言开发，包括请求转发（HTTP/RPC/HTTP-Over-RPC）、流量控制、灰度规则和认证鉴权等功能。
+        - 基于插件系统开发并维护多个插件，其中 OpenAPI 上报插件用于上报开发者调用记录（60k+QPS），实现规则引擎用于数据打码和重写。数据经由 Kafka 传输到 ES、Hive 和 Clickhouse，为其他系统提供数据支持。
       ],
     )
   }
@@ -264,7 +264,7 @@
         - Independently complete backend design and development, and work with multiple teams to achieve project development and management.
       ],
       zh: [
-        - 企业优惠券购买管理平台，提供组织管理、余额、订单和审批流等功能，创造数百万美元的收益。
+        - 企业优惠券购买管理平台，提供组织管理、余额、订单和审批流等功能。上线以来累计充值数百万美元。
         - 独立完成平台后端设计与开发，负责跨团队推进项目开发部分，及时管理进度。
       ],
     )
