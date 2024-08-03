@@ -171,7 +171,7 @@
         bl: [Shopee 卖家平台, Backend Development],
         br: [#translate-date(7, 2021) -- #translate-date(12, 2022)],
       )[
-        - 业务介绍：卖家平台负责站点首页、公共能力、主子账号、统一登录和API 网关等方向，为本地和跨境店铺提供商家端站点，为运营提供高效运营工具。
+        - 业务介绍：卖家平台负责站点首页、公共能力、主子账号、统一登录和 API 网关等方向，为本地和跨境店铺提供商家端站点，为运营提供高效运营工具。
         - 负责设计并实现汇率、公告、弹窗、审核系统、侧边栏等模块，维护问卷系统、功能开关和运营平台等服务。
         - 参与开发卖家部门 #openresty 网关，设计并维护内部插件。
       ],
@@ -191,8 +191,8 @@
         br: [#translate-date(12, 2022) -- #current],
       )[
         - 业务介绍：开放平台提供 OpenAPI 鉴权授权、消息推送、沙箱环境和门户站点等业务，提供稳定高性能的开放平台能力。
-        - 主要负责网关插件、开发者控制台和推送系统等服务，提高鉴权授权性能，丰富控制台功能，提升系统可观测性和提高用户体验。
-        - 参与横向项目开发，如地区拆分、异地灾备、重构、降本增效和服务治理等。
+        - 主要负责开发网关部分、控制台、入驻、审核和推送系统等，提高核心鉴权性能，丰富控制台功能，提升系统可观测性和提高用户体验。
+        - 参与业务其它开发，如地区拆分、异地灾备、重构、降本增效和服务治理等。
       ],
     )
   }
@@ -204,12 +204,14 @@
 
     translate(
       en: [
-        - Based on OpenResty, developed in Lua, including HTTP/RPC/HTTP-Over-RPC, traffic control, gray rules, authentication, etc.
-        - Based on plugin system, developed and maintained multiple plugins, including OpenAPI report plugin for calling statistics（60k+QPS），data sent to Kafka for other systems to provide data support.
+        - Based on plugin system, develop multiple plugins, including ACL plugin, authentication plugin, log reporting plugin, and captcha plugin.
+        - Call log reporting plugin (60k+ QPS), and use Kafka to report data, to provide reliable data support to the downstream system.
+        - Implement high-performance JSON structure data processing library, and implement accurate control of nested objects and arrays, to support the log reporting and API sensitive data.
       ],
       zh: [
-        - 项目基于 OpenResty 实现，使用 Lua 语言开发，包括请求转发（HTTP/RPC/HTTP-Over-RPC）、流量控制、灰度规则和认证鉴权等功能。
-        - 基于插件系统开发并维护多个插件，其中 OpenAPI 上报插件用于上报开发者调用记录（60k+QPS），实现规则引擎用于数据打码和重写。数据经由 Kafka 传输到 ES、Hive 和 Clickhouse，为其他系统提供数据支持。
+        - 基于插件系统开发多个插件，包括 ACL 插件、鉴权插件和打码插件等。
+        - 设计实现了开发者调用日志上报插件（60k+ QPS），通过 Kafka 传输，给下游系统提供可靠的数据支持。
+        - 实现高性能 JSON 结构规则处理库，实现对嵌套对象和数组的精确控制，用于打码上报日志与 API 敏感数据。
       ],
     )
   }
@@ -226,8 +228,8 @@
         - Add multiple console panels, including call statistics, business analysis, log search.
       ],
       zh: [
-        - 优化系统性能和稳定性，包括优化鉴权流程、页面延迟优化、增加降级策略等，保障系统稳定性和提升开发者体验。
-        - 基于地区拆分方案优化推送系统，有效降低异地推送耗时（600ms->30ms），提供控制台测速功能，帮助开发者选择最佳推送服务器。
+        - 提高系统性能和稳定性，优化鉴权流程（P95 耗时 15->8ms），增加平滑过度机制和鉴权降级策略，优化站点页面延迟（部分页面降低 90% 延迟）。
+        - 基于地区拆分方案优化推送系统，有效降低异地推送耗时（600->30ms）。提供控制台测速功能，帮助开发者选择最佳推送服务器。
         - 为用户控制台添加多个模块，如统计看板、商业分析页、日志搜索、漏洞看板、惩罚系统等，丰富平台功能提升用户体验。
       ],
     )
@@ -246,8 +248,8 @@
         - Function switch project used for flexible configuration of feature blacklist, with tagging, version management and rollback, it is widely used in the department.
       ],
       zh: [
-        - 主站服务包含统一弹窗、侧边栏等模块，内部广泛采用了异步加载、缓存和消息队列等技术，显著提升了网站响应速度和卖家体验。
-        - 功能开关项目用于灵活配置功能黑白名单，具有打标、版本管理和回滚等功能，广泛应用于卖家各项业务。
+        - 主站服务包含统一弹窗、侧边栏等核心模块，内部广泛采用了异步加载、缓存和消息队列等技术，显著提升了首页响应速度和卖家体验。
+        - 功能开关项目用于灵活配置功能黑白名单，具有打标、版本管理和快速回滚等功能，广泛应用于卖家各项业务。
       ],
     )
   }
