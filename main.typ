@@ -1,5 +1,5 @@
 #let dividerline() = {
-  v(-5pt)
+  v(-3pt)
   line(length: 100%, stroke: gray)
   v(-8pt)
 }
@@ -58,7 +58,7 @@
   set par(justify: true)
 
   show heading.where(level: 1): set text(
-    size: 15pt,
+    size: 18pt,
     weight: "light",
   )
 
@@ -82,7 +82,7 @@
 
   show link: it => underline(offset: 2pt, it)
   set page(
-    margin: (x: 0.5cm, y: 0.9cm),
+    margin: (x: 1.2cm, top: 1cm),
     numbering: "1 / 1",
   )
   set par(justify: true)
@@ -91,7 +91,7 @@
 }
 
 #let newpage = {
-  set page(margin: (x: 0.5cm, y: 0.9cm), numbering: "1 / 1")
+  set page(margin: (x: 1.2cm, top: 1cm), numbering: "1 / 1")
   set par(justify: true)
 }
 
@@ -155,44 +155,41 @@
       )[],
     )
 
-    let openresty = link("https://openresty.org", "OpenResty")
-
     translate(
       en: cventry(
         bl: [*Shopee Seller Platform*, Backend Development],
-        br: [#translate-date(7, 2021) -- #translate-date(12, 2022)],
+        br: [#translate-date(7, 2021) -- #translate-date(1, 2023)],
       )[
-        - Seller platform is responsible for the direction of public capacity, account, login, etc., including API gateway, seller master station, unified login, master-sub-account system, and function switch project.
-        - Mainly responsible for the development of the seller's main station and function switch project, design and implement several unified framework modules, such as exchange rate, pop-up window, audit system, export center, marking, etc. Design and implement the announcement, sidebar, shop settings, etc. of the main station.
-        - Design and realize homepage modules such as main site announcement, sidebar, store settings, etc. Maintain services such as questionnaire system and management platform.
-        - Participate in the development of seller department #openresty gateway, design and maintain plug-in system.
+        - Business overview: The seller platform is responsible for the site homepage, public capabilities, main and sub-accounts, unified login, and API gateway. It provides merchant-side sites for local and cross-border stores, and efficient operational tools for operations teams.
+        - Designed and implemented modules such as exchange rates, announcements, pop-ups, review systems, and sidebars. Optimized and maintained questionnaire systems, feature toggle projects, and operational platforms.
+        - Participated in the OpenResty API gateway development, handling large amounts of traffic, designing and maintaining internal plugins.
       ],
       zh: cventry(
-        bl: [Shopee 卖家平台, Backend Development],
-        br: [#translate-date(7, 2021) -- #translate-date(12, 2022)],
+        bl: [Shopee 卖家平台，后端],
+        br: [#translate-date(7, 2021) -- #translate-date(1, 2023)],
       )[
         - 业务介绍：卖家平台负责站点首页、公共能力、主子账号、统一登录和 API 网关等方向，为本地和跨境店铺提供商家端站点，为运营提供高效运营工具。
         - 负责设计并实现汇率、公告、弹窗、审核系统、侧边栏等模块，维护问卷系统、功能开关和运营平台等服务。
-        - 参与开发卖家部门 #openresty 网关，设计并维护内部插件。
+        - 参与 OpenResty API 网关开发，处理大量业务流量，设计和维护内部插件。
       ],
     )
 
     translate(
       en: cventry(
         bl: [*Shopee Open Platform*, Backend Development],
-        br: [#translate-date(12, 2022) -- #current],
+        br: [#translate-date(1, 2023) -- #current],
       )[
-        - The open platform provides OpenAPI authentication and authorization, message push, console and other functions, providing comprehensive merchant management capabilities for millions of Shopee stores.
-        - Mainly responsible for the development of gateway, console, push system and other services to enrich the console functions, improve the performance of authentication and authorization, enhance the observability of the system and improve user experience.
-        - Participate in region splitting program (off-site multi-live) and disaster recovery program (same city multi-live) to improve system stability.
-        - Participate in horizontal project development, such as refactoring, cost reduction and efficiency, service governance, region splitting, disaster recovery, etc.],
+        - Business overview: The open platform provides portal sites, OpenAPI authentication and authorization, message push, and sandbox environment, offering stable and high-performance open platform capabilities.
+        - Responsible for gateway, console, onboarding, review, and push systems modules. Improved system stability and performance, expanded console functionality, and enhanced user experience.
+        - Participated in business technology development, including regional splitting, remote disaster recovery, observability, project refactoring, service governance, cost reduction and efficiency improvement, and framework integration.
+      ],
       zh: cventry(
-        bl: [Shopee 开放平台（同组不同业务）, Backend Development],
-        br: [#translate-date(12, 2022) -- #current],
+        bl: [Shopee 开放平台（同组不同业务），后端],
+        br: [#translate-date(1, 2023) -- #current],
       )[
-        - 业务介绍：开放平台提供 OpenAPI 鉴权授权、消息推送、沙箱环境和门户站点等业务，提供稳定高性能的开放平台能力。
-        - 主要负责开发网关部分、控制台、入驻、审核和推送系统等，提高核心鉴权性能，丰富控制台功能，提升系统可观测性和提高用户体验。
-        - 参与业务其它开发，如地区拆分、异地灾备、重构、降本增效和服务治理等。
+        - 业务介绍：开放平台提供门户站点、OpenAPI 鉴权授权、消息推送和沙箱环境等业务，提供稳定高性能的开放平台能力。
+        - 负责网关、控制台、入驻、审核和推送系统等模块，提升系统稳定性和性能，扩展控制台功能，提升使用体验。
+        - 参与业务技术方向开发，如地区拆分、异地灾备、可观测性、项目重构、服务治理、降本增效和框架接入等。
       ],
     )
   }
@@ -204,14 +201,14 @@
 
     translate(
       en: [
-        - Based on plugin system, develop multiple plugins, including ACL plugin, authentication plugin, log reporting plugin, and captcha plugin.
-        - Call log reporting plugin (60k+ QPS), and use Kafka to report data, to provide reliable data support to the downstream system.
-        - Implement high-performance JSON structure data processing library, and implement accurate control of nested objects and arrays, to support the log reporting and API sensitive data.
+        - Developed multiple core functional modules based on plugin architecture, including ACL, authentication, and data masking plugins, improving system flexibility and scalability.
+        - Designed and implemented a high-throughput (60k+ QPS) developer call log reporting system, providing data support for downstream analysis systems.
+        - Implemented a high-performance JSON structure rule processing library, achieving precise control over complex nested objects and arrays, effectively applied to log masking and API sensitive data processing.
       ],
       zh: [
-        - 基于插件系统开发多个插件，包括 ACL 插件、鉴权插件和打码插件等。
-        - 设计实现了开发者调用日志上报插件（60k+ QPS），通过 Kafka 传输，给下游系统提供可靠的数据支持。
-        - 实现高性能 JSON 结构规则处理库，实现对嵌套对象和数组的精确控制，用于打码上报日志与 API 敏感数据。
+        - 基于插件架构开发多个核心功能模块，包括 ACL、鉴权和数据脱敏插件，提高系统灵活性和可扩展性。
+        - 设计并实现高吞吐量（60k+ QPS）的开发者调用日志上报系统，为下游分析系统提供数据支持。
+        - 实现高性能 JSON 结构规则处理库，实现对复杂嵌套对象和数组的精确控制，有效应用于日志脱敏和 API 敏感数据处理。
       ],
     )
   }
@@ -224,13 +221,14 @@
 
     translate(
       en: [
-        - Based on region split, optimize push system delay, and reduce push system delay.
-        - Add multiple console panels, including call statistics, business analysis, log search.
+        - Improved system performance and stability: Optimized authentication process (P95 latency 15->8ms), added smooth transition mechanisms and authentication degradation strategies, optimized page loading (some delays reduced by 90%).
+        - Optimized push system based on regional splitting, effectively reducing cross-region push latency (600->30ms). Developed speed test functionality to assist developers in selecting optimal push servers.
+        - Enhanced console functionality, adding multiple modules such as statistics dashboard, business analysis, log search, vulnerability monitoring, and penalty system, comprehensively improving platform functionality and user experience.
       ],
       zh: [
-        - 提高系统性能和稳定性，优化鉴权流程（P95 耗时 15->8ms），增加平滑过度机制和鉴权降级策略，优化站点页面延迟（部分页面降低 90% 延迟）。
-        - 基于地区拆分方案优化推送系统，有效降低异地推送耗时（600->30ms）。提供控制台测速功能，帮助开发者选择最佳推送服务器。
-        - 为用户控制台添加多个模块，如统计看板、商业分析页、日志搜索、漏洞看板、惩罚系统等，丰富平台功能提升用户体验。
+        - 提升系统性能与稳定性：优化鉴权流程（P95 耗时 15->8ms），添加平滑过渡机制和鉴权降级策略，优化页面加载（部分延迟降低 90%）。
+        - 基于地区拆分方案优化推送系统，有效缩减异地推送耗时（600->30ms）。开发测速功能协助开发者选择最佳推送服务器。
+        - 增强控制台功能，新增统计看板、商业分析、日志搜索、漏洞监控、惩罚系统等多个模块，全面提升平台功能与用户体验。
       ],
     )
   }
@@ -244,12 +242,12 @@
 
     translate(
       en: [
-        - Includes unified popups, sidebars, etc. With asynchronous loading, cache and message queue, it greatly improved the response speed and seller experience.
-        - Function switch project used for flexible configuration of feature blacklist, with tagging, version management and rollback, it is widely used in the department.
+        - Core components include unified pop-ups and sidebars, extensively using asynchronous loading, caching, and message queues, significantly improving seller-side user experience.
+        - Feature toggle system supports fine-grained blacklist and whitelist management, version control, and rollback, widely applied in business, improving product iteration efficiency and operational flexibility.
       ],
       zh: [
-        - 主站服务包含统一弹窗、侧边栏等核心模块，内部广泛采用了异步加载、缓存和消息队列等技术，显著提升了首页响应速度和卖家体验。
-        - 功能开关项目用于灵活配置功能黑白名单，具有打标、版本管理和快速回滚等功能，广泛应用于卖家各项业务。
+        - 包含统一弹窗和侧边栏等核心组件，广泛采用了异步加载、缓存和消息队列等技术，显著提升卖家端用户体验。
+        - 功能开关系统支持精细化的黑白名单管理、版本控制和回滚，在业务中广泛应用，提高产品迭代效率和运营灵活性。
       ],
     )
   }
@@ -262,12 +260,12 @@
 
     translate(
       en: [
-        - Online voucher code management service, including organization management, balance, order and approval flow.
-        - Independently complete backend design and development, and work with multiple teams to achieve project development and management.
+        - Enterprise coupon gift-card management platform, providing organization management, balance, order, and approval flow functionalities. Accumulated hundreds of thousands of dollars in recharges since launch.
+        - Independently completed platform backend design and development, responsible for cross-team project development promotion, timely progress management, ensuring on-schedule project launch.
       ],
       zh: [
         - 企业优惠券购买管理平台，提供组织管理、余额、订单和审批流等功能。上线以来累计充值数百万美元。
-        - 独立完成平台后端设计与开发，负责跨团队推进项目开发部分，及时管理进度。
+        - 独立完成平台后端设计与开发，负责跨团队推进项目开发部分，及时管理进度，保障项目如期上线。
       ],
     )
   }
