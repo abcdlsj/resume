@@ -64,7 +64,7 @@
 
   let the-font = (
     "Palatino",
-    "Noto Serif CJK SC",
+    "PingFang SC",
   )
 
   show heading.where(level: 2): it => text(
@@ -82,7 +82,7 @@
 
   show link: it => underline(offset: 2pt, it)
   set page(
-    margin: (x: 1.2cm, top: 1cm),
+    margin: (x: 1.2cm, y: 0.5cm),
     numbering: "1 / 1",
   )
   set par(justify: true)
@@ -91,7 +91,7 @@
 }
 
 #let newpage = {
-  set page(margin: (x: 1.2cm, top: 1cm), numbering: "1 / 1")
+  set page(margin: (x: 1.2cm, y: 0.5cm), numbering: "1 / 1")
   set par(justify: true)
 }
 
@@ -222,12 +222,12 @@
     translate(
       en: [
         - Improved system performance and stability: Optimized authentication process (P95 latency 15->8ms), added smooth transition mechanisms and authentication degradation strategies, optimized page loading (some delays reduced by 90%).
-        - Optimized push system based on regional splitting, effectively reducing cross-region push latency (600->30ms). Developed speed test functionality to assist developers in selecting optimal push servers.
+        - Optimized push system based on regional splitting, effectively reducing cross-region push latency. Developed speed test functionality to assist developers in selecting optimal push servers.
         - Enhanced console functionality, adding multiple modules such as statistics dashboard, business analysis, log search, vulnerability monitoring, and penalty system, comprehensively improving platform functionality and user experience.
       ],
       zh: [
-        - 提升系统性能与稳定性：优化鉴权流程（P95 耗时 15->8ms），添加平滑过渡机制和鉴权降级策略，优化页面加载（部分延迟降低 90%）。
-        - 基于地区拆分方案优化推送系统，有效缩减异地推送耗时（600->30ms）。开发测速功能协助开发者选择最佳推送服务器。
+        - 提升系统性能与稳定性：优化鉴权流程（P95 延迟 15->8ms），添加平滑过渡机制和鉴权降级策略，优化页面加载（部分延迟降低 90%）。
+        - 基于地区拆分方案优化推送系统，有效缩减跨区推送耗时（800->20ms），开发测速功能协助开发者选择最佳推送服务器。
         - 增强控制台功能，新增统计看板、商业分析、日志搜索、漏洞监控、惩罚系统等多个模块，全面提升平台功能与用户体验。
       ],
     )
